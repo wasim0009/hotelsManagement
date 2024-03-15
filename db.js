@@ -1,10 +1,12 @@
 const mongoose= require("mongoose");
+require('dotenv').config();
 
-const mongoURL= 'mongodb://localhost:27017/hotels'
+
+// const mongoURL= 'mongodb://localhost:27017/hotels'
+const mongoURL= process.env.DB_URL;
 
 const Person = require('./models/person');
 const bodyParser = require("body-parser");
-
 
 // this is default line we have to write for new making new connection 
 // for connectivity
