@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 
 
 // this is default line we have to write for new making new connection 
+// for connectivity
 mongoose.connect(mongoURL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
