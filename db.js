@@ -3,7 +3,8 @@ require('dotenv').config();
 
 
 // const mongoURL= 'mongodb://localhost:27017/hotels'
-const mongoURL= process.env.DB_URL;
+const mongoURL= process.env.LOCAL_DB;
+// const mongoURL= process.env.DB_URL;
 
 const Person = require('./models/person');
 const bodyParser = require("body-parser");
